@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type ="text/css" href="{% static 'blog/css/counter.css' %}" />
+        <title>Douglas dos Santos Pereira</title>
+	<title></title>
+	</head>
+	
+	<body>
+		<form class="count" action="result">
+			<fieldset class="contador">
+				<h1>Contador de Palavras</h1><br>
+				<label for="count">Insira o texto para contagem de palavras:</label><br>
+				<textarea style="resize: none" name="count" class="text" cols="100" rows="10"></textarea><br>
+				<div align="right">
+					<input type="submit" class="btm">
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>
